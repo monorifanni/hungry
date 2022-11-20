@@ -1,22 +1,25 @@
 <!--Navbar-->
 <nav class="navbar">
-      <a class="logo" href="#">HUNGRY</a>
-      <div class="menuToggle" (click)="toggle()"></div>
+  <a class="logo" href="#">HUNGRY</a>
+  <div class="menuToggle" (click)="toggle()"></div>
 </nav>
 
 <!--Nav links-->
 <ul class="navigation">
   <li class="nav-item">
-    <a class="nav-link" href="#home">Home</a>
+    <a class="nav-link" href="#home" (click)="toggleMenu()">Home</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="#home">About</a>
+    <a class="nav-link" href="#about" (click)="toggleMenu()">About us</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="#">Share recipe</a>
+    <a class="nav-link" href="#post" (click)="toggleMenu()">Latest posts</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="#">Recipes</a>
+    <a class="nav-link" href="#" (click)="toggleMenu()">Share recipe</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#" (click)="toggleMenu()">Recipes</a>
   </li>
 </ul>
 
@@ -26,9 +29,207 @@
   <div class="contentBox">
     <h2>Hungry is what you need</h2>
     <h4>You can share recipes here</h4>
-    <a href="#" class="btn">About</a>
+    <a href="#about" class="btn">About us</a>
   </div>
 </section>
 
+<!--About-->
+<section class="about" id="about">
+  <div class="title">
+    <h2>About us</h2>
+  </div>
+  <div class="contentBox">
+    <div class="content">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam assumenda, earum ipsum natus non omnis porro
+        quaerat quas quis quisquam ratione unde. Debitis nemo porro veniam. Aspernatur beatae consequuntur deleniti et
+        ex exercitationem maxime minima, minus mollitia quae qui quo rem, repellendus! A adipisci architecto at,
+        deleniti eaque molestias nesciunt, nihil nostrum odio praesentium provident quaerat rem sapiente ut vitae?
+        Accusantium architecto autem ducimus exercitationem facilis ipsam ipsum nobis.
+        Deserunt ea fugit voluptatum. Distinctio ducimus eaque fugit libero maxime similique voluptatum? <br><br>
+        Dolores ducimus ea eaque provident
+        tenetur. Amet ea facilis fuga iusto, obcaecati officia possimus praesentium quibusdam sunt suscipit? Adipisci
+        assumenda atque culpa cum enim explicabo laborum magnam modi obcaecati reiciendis? Consectetur cupiditate dolor
+        incidunt labore minus perspiciatis placeat quis sequi. </p>
+    </div>
+    <div class="content">
+      <div class="imgBox">
+        <img src="assets/about2.jpg" class="cover" alt="about us">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--Latest Blog Post-->
+<section class="post" id="post">
+
+  <div class="title">
+    <h2>Latest Post</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aperiam explicabo fugit illo inventore ipsa
+      neque odio perferendis quae suscipit?</p>
+  </div>
+
+  <div class="contentBox">
+
+    <div class="postColumn">
+      <div class="postBox">
+        <div class="imgBox">
+          <img src="assets/post1.jpg" class="cover" alt="a post">
+        </div>
+        <div class="textBox">
+          <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium assumenda commodi, consequuntur
+            dolor dolorem error esse obcaecati odio quis.</h3>
+          <a href="#" class="btn">Read More</a>
+        </div>
+      </div>
+
+      <div class="postBox">
+        <div class="imgBox">
+          <img src="assets/post2.jpg" class="cover" alt="a post">
+        </div>
+        <div class="textBox">
+          <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium assumenda commodi, consequuntur
+            dolor dolorem error esse obcaecati odio quis.</h3>
+          <a href="#" class="btn">Read More</a>
+        </div>
+      </div>
+
+      <div class="postBox extraHeight">
+        <div class="imgBox">
+          <img src="assets/post3.jpg" class="cover" alt="a post">
+        </div>
+        <div class="textBox">
+          <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium assumenda commodi, consequuntur
+            dolor dolorem error esse obcaecati odio quis.</h3>
+          <a href="#" class="btn">Read More</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="postColumn">
+      <div class="postBox extraHeight">
+        <div class="imgBox">
+          <img src="assets/post4.jpg" class="cover" alt="a post">
+        </div>
+        <div class="textBox">
+          <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium assumenda commodi, consequuntur
+            dolor dolorem error esse obcaecati odio quis.</h3>
+          <a href="#" class="btn">Read More</a>
+        </div>
+      </div>
+
+      <div class="postBox">
+        <div class="imgBox">
+          <img src="assets/post5.jpg" class="cover" alt="a post">
+        </div>
+        <div class="textBox">
+          <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium assumenda commodi, consequuntur
+            dolor dolorem error esse obcaecati odio quis.</h3>
+          <a href="#" class="btn">Read More</a>
+        </div>
+      </div>
+
+      <div class="postBox">
+        <div class="imgBox">
+          <img src="assets/post6.jpg" class="cover" alt="a post">
+        </div>
+        <div class="textBox">
+          <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium assumenda commodi, consequuntur
+            dolor dolorem error esse obcaecati odio quis.</h3>
+          <a href="#" class="btn">Read More</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="postColumn">
+      <div class="postBox">
+        <div class="imgBox">
+          <img src="assets/post7.jpg" class="cover" alt="a post">
+        </div>
+        <div class="textBox">
+          <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium assumenda commodi, consequuntur
+            dolor dolorem error esse obcaecati odio quis.</h3>
+          <a href="#" class="btn">Read More</a>
+        </div>
+      </div>
+
+      <div class="postBox">
+        <div class="imgBox">
+          <img src="assets/post8.jpg" class="cover" alt="a post">
+        </div>
+        <div class="textBox">
+          <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium assumenda commodi, consequuntur
+            dolor dolorem error esse obcaecati odio quis.</h3>
+          <a href="#" class="btn">Read More</a>
+        </div>
+      </div>
+
+      <div class="postBox extraHeight">
+        <div class="imgBox">
+          <img src="assets/post9.jpg" class="cover" alt="a post">
+        </div>
+        <div class="textBox">
+          <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium assumenda commodi, consequuntur
+            dolor dolorem error esse obcaecati odio quis.</h3>
+          <a href="#" id="read-more-btn" class="btn">Read More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="title">
+    <a href="#" class="btn load-more">Load More</a>
+  </div>
+</section>
+
+<!--Contact-->
+<section class="contact" id="contact">
+
+  <div class="title">
+    <h2>Get in touch</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aperiam explicabo fugit illo inventore ipsa
+      neque odio perferendis quae suscipit? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, iusto.</p>
+  </div>
+
+  <div class="contactForm">
+    <div class="row1">
+      <input type="text" name="fname" placeholder="First Name">
+      <input type="text" name="lname" placeholder="Last Name">
+    </div>
+    <div class="row1">
+      <input type="text" name="email" placeholder="Email address">
+      <input type="text" name="tel" placeholder="Mobile No.">
+    </div>
+    <div class="row2">
+      <textarea placeholder="Message"></textarea>
+    </div>
+    <div class="row2">
+      <input type="submit" value="Send" class="btn">
+    </div>
+
+  </div>
+</section>
+
+<!--Footer-->
+<footer>
+  <a class="footerLogo" href="#">HUNGRY</a>
+  <ul class="footerMenu">
+    <li class="nav-item">
+      <a class="nav-link" href="#home">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#about">About us</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#post">Latest posts</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Share recipe</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Recipes</a>
+    </li>
+  </ul>
+  <p class="copyrightText">Copyright © 2022 Monori Fanni. All Right Reserved</p>
+</footer>
 
 

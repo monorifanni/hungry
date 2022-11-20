@@ -26,4 +26,13 @@ export class NavbarComponent implements OnInit {
       navigation.classList.toggle('active');
     }
   }
+
+  toggleMenu() {
+    const menuToggle = document.querySelector('.menuToggle');
+    const navigation = document.querySelector('.navigation');
+    if (menuToggle && navigation) {
+      menuToggle.classList.remove('active');
+      navigation.classList.remove('active');
+    }
+  }
 }
